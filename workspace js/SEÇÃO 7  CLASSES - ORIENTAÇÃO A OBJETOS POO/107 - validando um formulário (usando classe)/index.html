@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Formulário de cadastro</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>usuário só poderá conter letras e numeros</li>
+            <li>usuário deve ter entre 3 e 12 caractéres</li>
+            <li>senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+
+        <form action="/" method="POST" class="Formulário">
+            <label>NOME:</label>
+            <input type="text" class="nome validar"><br><br>
+            <label>SOBRENOME:</label>
+            <input type="text" class="sobrenome validar"><br><br>
+            <label>CPF:</label>
+            <input type="text" class="cpf validar"><br><br>
+            <label>USUARIO:</label>
+            <input type="text" class="usuario validar"><br><br>
+            <label>SENHA:</label>
+            <input type="password" class="senha validar"><br><br>
+            <label>REPETIR SENHA:</label>
+            <input type="password" class="repetir-senha validar"><br><br>
+            <button type="submit">enviar</button>
+        </form>
+    </section>
+    
+
+    <script src="assets/JS/useclass.js"></script>
+    <script src="assets/JS/validaForm.js"></script>
+</body>
