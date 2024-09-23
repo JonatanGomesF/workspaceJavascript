@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+ 
+  
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+
+/*meu prototype*/
+#corDisponivel{
+    text-align: center;
+}
+#selecao, #modelo, #cores{
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.dourada{
+    object-fit: cover;
+    width: 600px;
+    height: 600px;
+    margin-left: 50px;
+    font-size: 22px;
+        line-height: 23px;
+        margin-bottom: 8px;
+        transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s 
+}
+.dourada:hover{
+  transform: scale(1.1)
+}
+.wrap{
+  width: 600px;
+  height: 900px;
+  align-items: center;
+  text-align: center;
+  float: right;
+  max-width: 880px;
+  cursor: pointer;
+  
+}
+.wrap:hover{
+box-shadow: 5px 8px 8px 6px lightblue;
+}
+
+/*introdução sobre a caneca na segunda pagina*/
+.texto{
+  
+text-align: center;
+}
+.introducion{
+  max-width: 1100px;
+  
+}
+
+.textoCaneca{
+ 
+}
+
+/*controle de + e - */
+
+#quantity{
+    max-width: 30px;
+}
+
+
+.quantity-controls {
+    
+    align-items: center;
+}
+
+.quantity-controls button{
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.quantity-controls input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+   
+}
+
+#finish{
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#finish{
+  height: 80px;
+}
+
+#quantity{
+  font-size: 20px;
+  width: 60px;
+  
+  background-color: whitesmoke;
+  border-radius: 20px;
+  border: solid 1px black;
+
+}
+#plus, #finish, #menos{
+ 
+  
+  border: solid 1px gray;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s 
+  
+}
+
+
+#plus:hover, #finish:hover, #menos:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  color: black;
+  transform: scale(1.1)
+}
+
+#resultTotal {
+  color: #fff;
+  font-weight: bold;
+  background-color: gray;
+  font-size: 40px;
+  max-width: 350px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*     <h1>canecas para venda</h1>
+        <div class="valores1"><b>cores simples =</b> azul, vermelho, cinza, verde e lilás<br>
+            preço 300ml simples = 11,00 <br>
+            preço 500ml simples = 12,00<br>
+            preço 700ml simples = 13,00<br><br>
+            <b>cores personalizadas =</b> dourada, metálica, perolizada<br>
+            preço 300ml personalizada = 14,00<br>
+            preço 500ml personalizada = 15,00<br>
+            preço 700ml personalizada = 16,00<br>
+            </div><br><hr>
+*/
+

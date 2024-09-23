@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;
+        }
+    #clickButton{
+        text-align: center;
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+        #usuario {
+            font-size: 24px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        #contador {
+            font-size: 40px;
+            text-align: center;
+
+        }
+        .usuarioNormal {
+            color: black;
+        }
+        .usuarioVIP {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo de Contador de Cliques</h1>
+    <button id="clickButton">Clique aqui</button>
+    <div id="contador">Cliques: 0</div>
+    <div id="usuario">Nível do Usuário: </div>
+
+    <script>
+        let cliques = 0;
+        const clickButton = document.getElementById('clickButton');
+        const contadorDiv = document.getElementById('contador');
+        const usuarioDiv = document.getElementById('usuario');
+
+        clickButton.addEventListener('click', () => {
+            cliques++;
+            contadorDiv.textContent = `Cliques: ${cliques}`;
+            let nivelUsuario = cliques >= 10 ? 'usuarioVIP' : 'usuarioNormal';
+            let corUsuario = cliques >= 10 ? 'vermelha' : 'preta';
+            
+            usuarioDiv.textContent = `Nível do Usuário: ${nivelUsuario}`;
+            usuarioDiv.className = nivelUsuario;
+            usuarioDiv.style.color = corUsuario;
+        });
+    </script>
+</body>
+</html>
